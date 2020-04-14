@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bienes Raices</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/estilos.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900&display=swap" rel="stylesheet">
+</head>
+<body>
+<header class="site-header">
+   <div class="contenedor contenido-header">
+       <div class="barra">
+            <a href="index.html"><img src="img/logo.svg" alt="Logo Empresa"></a>
+            <nav class="navegacion">
+                <a href="nosotros.html" target="_blank">Nosotros</a>
+                <a href="anuncios.html">Anuncio</a>
+                <a href="blog.html">Blogs</a>
+                <a href="contacto.html" target="_blank">Contacto</a>
+            </nav>
+        </div>
+    </div>
+</header>
+    <h1 class="fw300 texto-centrado">Contacto</h1>
+    <img src="img/destacada3.jpg" alt="imagen-contacto">
+    <main class="contenedor seccion contenido-centrado">
+        <h2 class="fw300 texto-centrado">Llena el formulario de contacto</h2>
+        <form action="">
+            <fieldset>
+                <legend>Información Personal</legend>
+                <label for="nombre">Nombre</label>
+                <input type="text" id="nombre">
+                <label for="email">Email:</label>
+                <input type="email" id="email" required>
+                <label for="telefono">Telefono</label>
+                <input type="tel" id="telefono">
+                <label for="mensaje">Mensaje:</label>
+                <textarea></textarea>
+            </fieldset>
+            <fieldset>
+                <legend>Información sobre la propiedad</legend>
+                <label for="tipo">Vende o Compra</label>
+                <select id="tipo">
+                    <option disabled selected>Seleccionar</option>
+                    <option>Compra</option>
+                    <option>Venta</option>
+                </select>
+                <label for="">Presupuesto</label>
+                <input type="number" min=0 max=10>
+            </fieldset>
+            <fieldset>
+                <legend>Contacto</legend>
+                <p>¿Cómo desea ser contactado?</p>
+                <div class="forma-contacto">
+                    <label for="telefono">Telefono</label>
+                    <input type="radio" id="telefono" name="contacto">
+                    <label for="telefono">Email</label>
+                    <input type="radio" id="email" name="contacto">
+                </div>            
+                <p>Si eligio un telefono seleccione día y fecha</p>
+                <label for="fecha"></label>
+                <input type="date" id="fecha">
+                <label for="hora"></label>
+                <input type="time">
+            </fieldset>
+            <input type="submit" class="btn-verde btn" >
+        </form>
+
+    </main>
+    <footer class="pie-pagina seccion">
+        <div class="contenedor contenedor-footer">
+            <nav class="navegacion">
+                <a href="http://netflix.com" target="_blank">Nosotros</a>
+                <a href="anuncios.html">Anuncio</a>
+                <a href="blog.html">Blogs</a>
+                <a href="contacto.html" target="_blank">Contacto</a>
+            </nav>
+            <small>Todos los derechos reservados 2020 &copy;</small>
+        </div>
+    </footer>
+</body>
+</html>
